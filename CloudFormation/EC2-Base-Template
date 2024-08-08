@@ -1,12 +1,12 @@
-AWSTemplateFormatVersion: "2010-09-09"
-Description: Create EC2 Instance in Singapore Region
+AWSTemplateFormatVersion: "2024-08-08"
+Description: Create EC2 Instance in Ohio Region
 Resources:
  MyCFInstance:
   Type: AWS::EC2::Instance
   Properties:
-    AvailabilityZone: ap-southeast-1c
-    ImageId: ami-052f483c20fa1351a
+    AvailabilityZone: us-east-2
+    ImageId: ami-090e8849fdfd96f3f
     InstanceType: t2.micro
     Tags:
      - Key: Name
-       Value: MY-CF-Instance
+       Value: wordpress-blog
